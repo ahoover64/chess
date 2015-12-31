@@ -7,9 +7,9 @@ class ChessPlayer {
 public:
     Player();
     Player(const Player&);
-    Player& operator=(const Player&);
+    Player& operator=(const Player&) const;
     ~Player();
-    ChessMove get_move() = 0;
+    ChessMove get_move() const = 0;
 
 private:
     class Impl;
