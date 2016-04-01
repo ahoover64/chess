@@ -13,7 +13,7 @@ public:
     bool valid_move(ChessMove m);
     bool make_move(ChessMove m);
     Player get_winner();
-    static void save_game(Chess g);
+    static void save_game(Chess g, char filename[]);
 
 private:
     class Impl;
